@@ -1,192 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Amelia’s Resort – Private Pool & Party Space</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Affordable private pool and party venue in Antipolo City, Philippines. Book birthdays, reunions, team outings, and more." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amelia’s Resort</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Amelia’s Resort" />
-  <meta property="og:description" content="Private pool & party venue in Antipolo City. Check availability and book now." />
-  <meta property="og:type" content="website" />
-
-  <!-- FullCalendar (MIT, free) -->
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.15/index.global.min.js"></script>
-
-<!-- redeploy -->
-
-
-  
-  <!-- Icons -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏝️</text></svg>">
-
+  <!-- Core Styles -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- FullCalendar Core + iCalendar Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.15/index.global.min.js"></script>
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">Amelia’s Resort</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#rates">Rates</a>
-        <a href="#calendar">Availability</a>
-        <a href="#contact" class="btn btn-small">Inquire</a>
-      </nav>
-    </div>
+
+  <header>
+    <h1>Welcome to Amelia’s Resort</h1>
+    <p>Your private pool and party venue in Antipolo City, Philippines.</p>
   </header>
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <h1>Private Pool & Party Venue in Antipolo City</h1>
-      <p>Perfect for birthdays, family gatherings, team building, and chill weekends—just 30–60 mins from Metro Manila (traffic willing 😉).</p>
-      <div class="cta-row">
-        <a href="#calendar" class="btn">Check Availability</a>
-        <a href="#contact" class="btn btn-outline">Send an Inquiry</a>
-      </div>
-      <ul class="badges">
-        <li>✔️ Exclusive use</li>
-        <li>✔️ Free parking</li>
-        <li>✔️ Covered lounge</li>
-        <li>✔️ Karaoke-ready</li>
-      </ul>
-    </div>
-  </section>
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Amelia’s Resort is a private pool and function venue nestled in the heart of Antipolo City.
+        Perfect for birthdays, family reunions, or weekend getaways — enjoy a relaxing stay
+        with beautiful views and modern amenities.
+      </p>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About the Venue</h2>
-      <p>Our cozy Antipolo pool venue is designed for stress-free celebrations. Clean pool, covered dining area, changing room, and flexible hours. Bring your own food and enjoy the view and breeze!</p>
-      <div class="gallery">
-        <!-- Replace these with your own photos -->
-        <img src="https://images.unsplash.com/photo-1505842465776-3ac1a3b8f80b?q=80&w=1200&auto=format&fit=crop" alt="Pool daytime">
-        <img src="https://images.unsplash.com/photo-1519710884009-97529e76363f?q=80&w=1200&auto=format&fit=crop" alt="Lounge area">
-        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200&auto=format&fit=crop" alt="Night lighting">
-      </div>
-    </div>
-  </section>
-
-  <section id="amenities" class="section alt">
-    <div class="container">
-      <h2>Amenities</h2>
-      <div class="grid-amenities">
-        <div class="card">
-          <h3>Swimming Pool</h3>
-          <p>Well-maintained, regular treatment. Kiddie area + main pool.</p>
-        </div>
-        <div class="card">
-          <h3>Covered Dining</h3>
-          <p>Tables & chairs for your group. Bring-your-own food allowed.</p>
-        </div>
-        <div class="card">
-          <h3>Comfort Rooms</h3>
-          <p>Clean CRs and changing area.</p>
-        </div>
-        <div class="card">
-          <h3>Sound-Friendly</h3>
-          <p>OK for karaoke and speakers (respect curfew & neighbors).</p>
-        </div>
-        <div class="card">
-          <h3>Parking</h3>
-          <p>Free on-site parking (limited slots).</p>
-        </div>
-        <div class="card">
-          <h3>Security</h3>
-          <p>Private gate and staff on call during your stay.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="rates" class="section">
-    <div class="container">
-      <h2>Rates</h2>
-      <div class="rates">
-        <div class="rate-card">
-          <h3>Daytime (8 AM – 4 PM)</h3>
-          <p class="price">₱<span>5,500</span></p>
-          <p>Up to 20 pax • Add ₱200/head after</p>
-        </div>
-        <div class="rate-card">
-          <h3>Night (6 PM – 12 MN)</h3>
-          <p class="price">₱<span>6,500</span></p>
-          <p>Up to 20 pax • Add ₱250/head after</p>
-        </div>
-        <div class="rate-card">
-          <h3>Overnight (8 PM – 6 AM)</h3>
-          <p class="price">₱<span>8,500</span></p>
-          <p>Up to 15 pax • Add ₱300/head after</p>
-        </div>
-      </div>
-      <p class="fineprint">Note: Sample rates—edit to your actual pricing. Peak days/holidays may vary.</p>
-    </div>
-  </section>
-
-  <section id="calendar" class="section alt">
-    <div class="container">
+    <!-- Availability Section -->
+    <section id="availability">
       <h2>Availability</h2>
-      <p>Dates marked <strong>Booked</strong> are unavailable. Everything else is open—send us an inquiry to reserve your slot.</p>
-      <div class="calendar-toolbar">
-        <label class="legend">
-          <span class="dot"></span> Booked (unavailable)
-        </label>
-        <button id="btn-today" class="btn btn-small">Today</button>
-        <button id="btn-month" class="btn btn-small">Month</button>
-        <button id="btn-week" class="btn btn-small">Week</button>
-        <button id="btn-list" class="btn btn-small">List</button>
-      </div>
+      <p class="sync-note">
+        Synced with Google Calendar: <strong>bookings.amelias@gmail.com</strong>
+      </p>
       <div id="calendar"></div>
-      <p class="fineprint">Timezone: Asia/Manila • Last updated when this page loaded.</p>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Inquire / Book</h2>
-      <form class="contact-form" action="https://formspree.io/f/xeorvzar" method="POST">
-        <div class="grid-form">
-          <label>Full Name
-            <input type="text" name="name" required />
-          </label>
-          <label>Phone / Viber
-            <input type="tel" name="phone" required />
-          </label>
-          <label>Email
-            <input type="email" name="email" required />
-          </label>
-          <label>Preferred Date
-            <input type="date" name="date" required />
-          </label>
-          <label>Time Slot
-            <select name="slot" required>
-              <option value="Day">Day (8 AM – 4 PM)</option>
-              <option value="Night">Night (6 PM – 12 MN)</option>
-              <option value="Overnight">Overnight (8 PM – 6 AM)</option>
-            </select>
-          </label>
-          <label>Guests
-            <input type="number" name="guests" min="1" max="100" />
-          </label>
-        </div>
-        <label>Message
-          <textarea name="message" rows="5" placeholder="Tell us about your event…"></textarea>
-        </label>
-        <button class="btn" type="submit">Send Inquiry</button>
+    <!-- Booking Inquiry Section -->
+    <section id="contact">
+      <h2>Booking Inquiry</h2>
+      <p>Have questions or want to reserve a date? Send us a message below!</p>
+
+      <form
+        action="https://formspree.io/f/xeorvzar"
+        method="POST"
+        id="contact-form"
+      >
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Inquiry</button>
       </form>
-      <p class="fineprint">We typically reply within the day. For urgent questions, call/text: <a href="tel:+639123456789">+63 912 345 6789</a></p>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Amelia’s Resort • Antipolo City, Rizal, Philippines</p>
-    </div>
+  <footer>
+    <p>© <span id="year"></span> Amelia’s Resort | All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Custom Calendar Logic -->
+  <script src="script.js?v=ics8"></script>
 </body>
 </html>
+
