@@ -4,20 +4,20 @@
   <meta charset="utf-8" />
   <title>Amelia’s Resort – Private Pool & Party Venue (Antipolo)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Amelia’s Resort — private pool and party venue in Antipolo City, Philippines. Check availability (synced to Google Calendar) and send an inquiry." />
+  <meta name="description" content="Private pool and party venue in Antipolo City, Philippines. Check availability (synced to Google Calendar) and send an inquiry." />
 
-  <!-- Open Graph -->
+  <!-- Social -->
   <meta property="og:title" content="Amelia’s Resort" />
   <meta property="og:description" content="Private pool & party venue in Antipolo City. Check availability and book now." />
   <meta property="og:type" content="website" />
 
-  <!-- Favicon (swap to your own if you like) -->
+  <!-- Favicon (swap to your own later) -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏝️</text></svg>">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 
-  <!-- FullCalendar Core + iCalendar Plugin (order matters) -->
+  <!-- FullCalendar (order matters) -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.15/index.global.min.js"></script>
@@ -26,7 +26,7 @@
   <!-- Sticky Nav -->
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand">Amelia’s Resort</div>
+      <a class="brand" href="#">Amelia’s Resort</a>
       <nav>
         <a href="#about">About</a>
         <a href="#amenities">Amenities</a>
@@ -61,10 +61,10 @@
       <h2>About the Venue</h2>
       <p>Amelia’s Resort offers a cozy private pool with a covered dining area, changing rooms, and flexible hours—ideal for stress-free celebrations. Bring your own food and enjoy the Antipolo breeze and views!</p>
       <div class="gallery">
-        <!-- Replace with your real photos or upload to repo and use img/pool-1.jpg, etc. -->
+        <!-- Replace with your own photos or upload to repo and use img/pool-1.jpg etc. -->
         <img src="https://images.unsplash.com/photo-1505842465776-3ac1a3b8f80b?q=80&w=1200&auto=format&fit=crop" alt="Pool daytime at Amelia’s Resort">
-        <img src="https://images.unsplash.com/photo-1519710884009-97529e76363f?q=80&w=1200&auto=format&fit=crop" alt="Covered lounge/dining">
-        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200&auto=format&fit=crop" alt="Night lighting at pool">
+        <img src="https://images.unsplash.com/photo-1519710884009-97529e76363f?q=80&w=1200&auto=format&fit=crop" alt="Covered lounge and dining">
+        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200&auto=format&fit=crop" alt="Night lighting at the pool">
       </div>
     </div>
   </section>
@@ -109,19 +109,22 @@
     </div>
   </section>
 
-  <!-- Availability (Google Calendar ICS via FullCalendar) -->
+  <!-- Availability -->
   <section id="calendar" class="section alt">
     <div class="container">
       <h2>Availability</h2>
-      <p class="sync-note">Synced with Google Calendar: <strong>bookings.amelias@gmail.com</strong></p>
-      <p class="fineprint">Dates marked <strong>Booked</strong> are unavailable. Everything else is open—send us an inquiry to reserve your slot. Timezone: Asia/Manila.</p>
+      <p class="sync-note">
+        Synced with Google Calendar: <strong>bookings.amelias@gmail.com</strong>
+        <span id="last-sync" class="muted"></span>
+      </p>
+      <p class="fineprint">Dates marked <strong>Booked</strong> are unavailable. Everything else is open. Timezone: Asia/Manila.</p>
 
       <div class="calendar-toolbar">
         <label class="legend"><span class="dot"></span> Booked (unavailable)</label>
         <button id="btn-today" class="btn btn-small">Today</button>
         <button id="btn-month" class="btn btn-small">Month</button>
-        <button id="btn-week" class="btn btn-small">Week</button>
-        <button id="btn-list" class="btn btn-small">List</button>
+        <button id="btn-week"  class="btn btn-small">Week</button>
+        <button id="btn-list"  class="btn btn-small">List</button>
       </div>
 
       <div id="calendar"></div>
@@ -175,7 +178,7 @@
     </div>
   </footer>
 
-  <!-- Custom Calendar Logic (make sure script.js contains your ICS config) -->
-  <script src="script.js?v=ics8"></script>
+  <!-- Your calendar + UI logic -->
+  <script src="script.js?v=ics9"></script>
 </body>
 </html>
