@@ -4,23 +4,10 @@
   <meta charset="utf-8" />
   <title>Amelia’s Resort – Private Pool & Party Venue (Antipolo)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Private pool and party venue in Antipolo City, Philippines. Check availability (synced to Google Calendar) and send an inquiry." />
+  <meta name="description" content="Private pool and party venue in Antipolo City, Philippines. Send an inquiry to reserve your date." />
 
-  <!-- Social -->
-  <meta property="og:title" content="Amelia’s Resort" />
-  <meta property="og:description" content="Private pool & party venue in Antipolo City. Check availability and book now." />
-  <meta property="og:type" content="website" />
-
-  <!-- Favicon (swap to your own later) -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏝️</text></svg>">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css?v=3" />
-
-  <!-- FullCalendar (order matters) -->
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.15/index.global.min.js"></script>
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <!-- Sticky Nav -->
@@ -31,7 +18,6 @@
         <a href="#about">About</a>
         <a href="#amenities">Amenities</a>
         <a href="#rates">Rates</a>
-        <a href="#calendar">Availability</a>
         <a href="#contact" class="btn btn-small">Inquire</a>
       </nav>
     </div>
@@ -41,10 +27,10 @@
   <section class="hero">
     <div class="container hero-inner">
       <h1>Private Pool & Party Venue in Antipolo City</h1>
-      <p>Perfect for birthdays, family gatherings, team building, and weekend getaways—just 30–60 mins from Metro Manila (traffic willing 😉).</p>
+      <p>Perfect for birthdays, reunions, team building, and weekend getaways—just 30–60 mins from Metro Manila (traffic willing 😉).</p>
       <div class="cta-row">
-        <a href="#calendar" class="btn">Check Availability</a>
-        <a href="#contact" class="btn btn-outline">Send an Inquiry</a>
+        <a href="#contact" class="btn">Send an Inquiry</a>
+        <a href="#rates" class="btn btn-outline">See Rates</a>
       </div>
       <ul class="badges">
         <li>✔️ Exclusive use</li>
@@ -55,103 +41,92 @@
     </div>
   </section>
 
- <!-- About -->
-<section id="about" class="section">
-  <div class="container">
-    <h2>About the Venue</h2>
-    <p>
-      Amelia’s Resort offers a cozy private pool with a covered dining area, air-conditioned and fan rooms, and
-      flexible hours—perfect for birthdays, family reunions, or relaxing weekend getaways. Guests enjoy exclusive use
-      of the whole venue, videoke, refrigerator, and stove—all in a peaceful Antipolo setting.
-    </p>
+  <!-- About + Gallery + Inclusives -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About the Venue</h2>
+      <p>
+        Amelia’s Resort is a private pool and function venue in Antipolo City—ideal for stress-free celebrations.
+        Guests enjoy <strong>exclusive use</strong> of the entire resort, with an air-conditioned room and a fan room,
+        covered dining area, videoke entertainment, and essential amenities for a comfortable stay.
+      </p>
 
-    <div class="gallery">
-      <!-- Main Pool -->
-      <figure>
-        <img src="1000016282.jpg" alt="Main swimming pool at Amelia’s Resort" />
-        <figcaption>Main Pool — spacious and crystal clear, ideal for family gatherings</figcaption>
-      </figure>
+      <ul class="fineprint inclusives-list">
+        <li>✅ 1 Air-conditioned room with 2 queen-size beds</li>
+        <li>✅ 1 Fan room good for 5–6 pax</li>
+        <li>✅ Use of Videoke</li>
+        <li>✅ Use of Refrigerator</li>
+        <li>✅ Use of Stove</li>
+        <li>✅ 1 Free 5-gallon water container</li>
+      </ul>
 
-      <!-- Kids Pool -->
-      <figure>
-        <img src="1000016281.jpg" alt="Kids pool area at Amelia’s Resort" />
-        <figcaption>Kids Pool — safe and shallow area perfect for children</figcaption>
-      </figure>
+      <p class="fineprint">
+        Capacity: <strong>30 guests</strong> (max 40). Excess charge applies; see rates below.
+      </p>
 
-      <!-- Covered Patio -->
-      <figure>
-        <img src="1000016264.jpg" alt="Covered patio and dining area at Amelia’s Resort" />
-        <figcaption>Covered Patio — ample tables and seating for your party or event</figcaption>
-      </figure>
+      <div class="gallery">
+        <figure>
+          <img src="1000016282.jpg" alt="Main swimming pool at Amelia’s Resort" />
+          <figcaption>Main Pool — spacious and crystal clear</figcaption>
+        </figure>
+        <figure>
+          <img src="1000016281.jpg" alt="Kids pool area at Amelia’s Resort" />
+          <figcaption>Kids Pool — safe and shallow for children</figcaption>
+        </figure>
+        <figure>
+          <img src="1000016264.jpg" alt="Covered patio and dining area" />
+          <figcaption>Covered Patio — ample tables and seating</figcaption>
+        </figure>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Amenities -->
+  <section id="amenities" class="section alt">
+    <div class="container">
+      <h2>Amenities</h2>
+      <div class="grid-amenities">
+        <div class="card"><h3>Swimming Pool</h3><p>Well-maintained main pool + kiddie area.</p></div>
+        <div class="card"><h3>Covered Dining</h3><p>Tables & chairs for your group. BYO food allowed.</p></div>
+        <div class="card"><h3>Comfort Rooms</h3><p>Clean CRs and changing area.</p></div>
+        <div class="card"><h3>Sound-Friendly</h3><p>Karaoke & speakers OK (respect curfew & neighbors).</p></div>
+        <div class="card"><h3>Parking</h3><p>Free on-site parking (limited slots).</p></div>
+        <div class="card"><h3>Security</h3><p>Private gate; staff on call during your stay.</p></div>
+      </div>
+    </div>
+  </section>
 
   <!-- Rates -->
-<section id="rates" class="section">
-  <div class="container">
-    <h2>Resort Rates</h2>
-    <p class="fineprint">(good for 30 pax)</p>
-
-    <div class="rates">
-      <div class="rate-card">
-        <h3>Day Time</h3>
-        <p>9 AM – 5 PM</p>
-        <p class="price">₱<span>7,500</span></p>
-      </div>
-
-      <div class="rate-card">
-        <h3>Night Time</h3>
-        <p>7 PM – 7 AM</p>
-        <p class="price">₱<span>9,500</span></p>
-      </div>
-
-      <div class="rate-card">
-        <h3>22 Hours</h3>
-        <p>9 AM – 5 AM or 7 PM – 5 PM</p>
-        <p class="price">₱<span>13,500</span></p>
-      </div>
-    </div>
-
-    <h3 style="margin-top:2rem;">Inclusions</h3>
-    <ul class="fineprint">
-      <li>1 Air-conditioned room with 2 queen-size beds</li>
-      <li>1 Fan room good for 5–6 pax</li>
-      <li>Use of Videoke</li>
-      <li>Use of Refrigerator</li>
-      <li>Use of Stove</li>
-      <li>1 Free 5-gallon water container</li>
-    </ul>
-
-    <h3 style="margin-top:2rem;">Additional Guests</h3>
-    <p class="fineprint">
-      In excess of 30 pax (maximum of 40 pax):<br>
-      Day Time – ₱150 per head<br>
-      Night Time – ₱200 per head
-    </p>
-  </div>
-</section>
-
-  <!-- Availability -->
-  <section id="calendar" class="section alt">
+  <section id="rates" class="section">
     <div class="container">
-      <h2>Availability</h2>
-      <p class="sync-note">
-        Synced with Google Calendar: <strong>bookings.amelias@gmail.com</strong>
-        <span id="last-sync" class="muted"></span>
-      </p>
-      <p class="fineprint">Dates marked <strong>Booked</strong> are unavailable. Everything else is open. Timezone: Asia/Manila.</p>
+      <h2>Resort Rates</h2>
+      <p class="fineprint">(good for 30 pax)</p>
 
-      <div class="calendar-toolbar">
-        <label class="legend"><span class="dot"></span> Booked (unavailable)</label>
-        <button id="btn-today" class="btn btn-small">Today</button>
-        <button id="btn-month" class="btn btn-small">Month</button>
-        <button id="btn-week"  class="btn btn-small">Week</button>
-        <button id="btn-list"  class="btn btn-small">List</button>
+      <div class="rates">
+        <div class="rate-card">
+          <h3>Day Time</h3>
+          <p>9 AM – 5 PM</p>
+          <p class="price">₱<span>7,500</span></p>
+        </div>
+
+        <div class="rate-card">
+          <h3>Night Time</h3>
+          <p>7 PM – 7 AM</p>
+          <p class="price">₱<span>9,500</span></p>
+        </div>
+
+        <div class="rate-card">
+          <h3>22 Hours</h3>
+          <p>9 AM – 5 AM or 7 PM – 5 PM</p>
+          <p class="price">₱<span>13,500</span></p>
+        </div>
       </div>
 
-      <div id="calendar"></div>
+      <h3 style="margin-top:2rem;">Additional Guests</h3>
+      <p class="fineprint">
+        In excess of 30 pax (maximum 40 pax):<br>
+        Day Time — ₱150 per head • Night Time — ₱200 per head
+      </p>
     </div>
   </section>
 
@@ -159,7 +134,7 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Inquire / Book</h2>
-      <form class="contact-form" action="https://formspree.io/f/xeorvzar" method="POST">
+      <form class="contact-form" action="https://formspree.io/f/xeorvzar" method="POST" id="contact-form">
         <div class="grid-form">
           <label>Full Name
             <input type="text" name="name" required />
@@ -175,21 +150,22 @@
           </label>
           <label>Time Slot
             <select name="slot" required>
-              <option value="Day">Day (8 AM – 4 PM)</option>
-              <option value="Night">Night (6 PM – 12 MN)</option>
-              <option value="Overnight">Overnight (8 PM – 6 AM)</option>
+              <option value="Day">Day (9 AM – 5 PM)</option>
+              <option value="Night">Night (7 PM – 7 AM)</option>
+              <option value="22 Hours">22 Hours</option>
             </select>
           </label>
           <label>Guests
             <input type="number" name="guests" min="1" max="100" />
           </label>
         </div>
-        <!-- Honeypot to reduce spam -->
+        <!-- Honeypot to reduce bot spam -->
         <input type="text" name="_gotcha" style="display:none">
         <label>Message
           <textarea name="message" rows="5" placeholder="Tell us about your event…"></textarea>
         </label>
         <button class="btn" type="submit">Send Inquiry</button>
+        <p id="form-ok" class="form-ok" hidden>✅ Thanks! Your message was sent.</p>
       </form>
       <p class="fineprint">We typically reply within the day. For urgent questions, call/text: <a href="tel:+639123456789">+63 912 345 6789</a></p>
     </div>
@@ -202,7 +178,13 @@
     </div>
   </footer>
 
-  <!-- Your calendar + UI logic -->
-  <script src="script.js?v=ics9"></script>
+  <!-- Minimal JS: footer year + Formspree success UI -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Show a friendly success note if Formspree redirects back with ?success
+    if (location.search.includes('success=')) {
+      const ok = document.getElementById('form-ok'); if (ok) ok.hidden = false;
+    }
+  </script>
 </body>
 </html>
