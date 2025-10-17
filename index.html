@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Private pool and party venue in Antipolo City, Philippines. Send an inquiry to reserve your date." />
 
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏝️</text></svg>">
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=final" />
 </head>
 <body>
   <!-- Sticky Nav -->
@@ -86,12 +87,34 @@
     <div class="container">
       <h2>Amenities</h2>
       <div class="grid-amenities">
-        <div class="card"><h3>Swimming Pool</h3><p>Well-maintained main pool + kiddie area.</p></div>
-        <div class="card"><h3>Covered Dining</h3><p>Tables & chairs for your group. BYO food allowed.</p></div>
-        <div class="card"><h3>Comfort Rooms</h3><p>Clean CRs and changing area.</p></div>
-        <div class="card"><h3>Sound-Friendly</h3><p>Karaoke & speakers OK (respect curfew & neighbors).</p></div>
-        <div class="card"><h3>Parking</h3><p>Free on-site parking (limited slots).</p></div>
-        <div class="card"><h3>Security</h3><p>Private gate; staff on call during your stay.</p></div>
+        <div class="card">
+          <h3>Main Pool</h3>
+          <p>A large, well-maintained swimming pool perfect for family gatherings and group celebrations. Enjoy a refreshing dip under the Antipolo sun.</p>
+        </div>
+        <div class="card">
+          <h3>Kiddie Pool</h3>
+          <p>A smaller, shallow pool designed with safety and fun in mind — ideal for children to play and cool off while adults relax nearby.</p>
+        </div>
+        <div class="card">
+          <h3>Covered Dining Pavilion</h3>
+          <p>Spacious outdoor lounge and dining space with tables and chairs — perfect for shared meals and karaoke nights.</p>
+        </div>
+        <div class="card">
+          <h3>Private Guest Rooms</h3>
+          <p>Two cozy sleeping quarters — one air-conditioned and one fan-cooled — providing a relaxing rest area after a long celebration.</p>
+        </div>
+        <div class="card">
+          <h3>Sound-Ready Entertainment</h3>
+          <p>Enjoy videoke and portable speakers for singing, laughter, and memorable moments (within local noise guidelines).</p>
+        </div>
+        <div class="card">
+          <h3>Clean Facilities</h3>
+          <p>Comfort rooms, shower areas, and changing spaces kept fresh and tidy for guests’ convenience.</p>
+        </div>
+        <div class="card">
+          <h3>Parking & Security</h3>
+          <p>Free on-site parking for guests and a secure gated property with staff assistance when needed.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -130,7 +153,7 @@
     </div>
   </section>
 
-  <!-- Contact / Inquiry -->
+  <!-- Contact -->
   <section id="contact" class="section">
     <div class="container">
       <h2>Inquire / Book</h2>
@@ -159,7 +182,6 @@
             <input type="number" name="guests" min="1" max="100" />
           </label>
         </div>
-        <!-- Honeypot to reduce bot spam -->
         <input type="text" name="_gotcha" style="display:none">
         <label>Message
           <textarea name="message" rows="5" placeholder="Tell us about your event…"></textarea>
@@ -178,12 +200,12 @@
     </div>
   </footer>
 
-  <!-- Minimal JS: footer year + Formspree success UI -->
+  <!-- Minimal JS -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Show a friendly success note if Formspree redirects back with ?success
     if (location.search.includes('success=')) {
-      const ok = document.getElementById('form-ok'); if (ok) ok.hidden = false;
+      const ok = document.getElementById('form-ok');
+      if (ok) ok.hidden = false;
     }
   </script>
 </body>
